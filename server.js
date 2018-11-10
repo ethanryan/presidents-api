@@ -33,8 +33,7 @@ app.listen(port, () => {
 // })
 
 
-function compareNames(a,b) {
-//console.log("in compare, attribute is: ", attribute)
+function compareNamesAscending(a,b) {
   if (a.president < b.president)
     return -1;
   if (a.president > b.president)
@@ -42,9 +41,25 @@ function compareNames(a,b) {
   return 0;
 }
 
+function compareNamesDescending(a,b) {
+  if (a.president < b.president)
+    return 1;
+  if (a.president > b.president)
+    return -1;
+  return 0;
+}
+
 
 function sortArrayAscendingOrder(array) {
- return array.sort(compareNames)
+ return array.sort(compareNamesAscending)
+}
+
+function sortArrayDescendingOrder(array) {
+ return array.sort(compareNamesDescending)
+}
+
+function helloWorld() {
+  console.log("sup yall")
 }
 
 app.get("/presidents", (req, res) => {
@@ -53,7 +68,8 @@ app.get("/presidents", (req, res) => {
     // Get all of the rows from the spreadsheet.
       doc.getRows(1, function (err, rows) {
         if(!err) {
-          var sortedArray = sortArrayAscendingOrder(rows)
+          // var sortedArray = sortArrayAscendingOrder(rows)
+          var sortedArray = sortArrayDescendingOrder(rows)
           res.json(sortedArray) //send rows of data as response to api endpoint
         } else {
           console.log("err is: ", err)
