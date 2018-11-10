@@ -3,7 +3,7 @@ var express = require("express");
 const fs = require('fs');
 
 //var all_prez = require("./data/president_spreadsheet");
-// var pizza_data = require("./data/pizza");
+var pizza_data = require("./data/pizza");
 
 var GoogleSpreadsheet = require('google-spreadsheet');
 var creds = require('./data/client_secret.json');
@@ -27,10 +27,10 @@ app.listen(port, () => {
 //  res.json(["Tony","Lisa","Michael","Ginger","Food"]);
 // });
 
-// app.get("/pizza", (req, res) => {
-//   // res.json("pzzaaaaaa")
-//   res.json([pizza_data])
-// })
+app.get("/pizza", (req, res) => {
+  // res.json("piiiizzaaaaaa")
+  res.json([pizza_data])
+})
 
 
 function compareNamesAscending(a,b) {
