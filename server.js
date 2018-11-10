@@ -33,13 +33,28 @@ app.listen(port, () => {
 // })
 
 
+function compareNames(a,b) {
+//console.log("in compare, attribute is: ", attribute)
+  if (a.president < b.president)
+    return -1;
+  if (a.president > b.president)
+    return 1;
+  return 0;
+}
+
+
+function sortArrayAscendingOrder(array) {
+ return array.sort(compareNames)
+}
+
 app.get("/presidents", (req, res) => {
   // Authenticate with the Google Spreadsheets API.
   doc.useServiceAccountAuth(creds, function (err) {
     // Get all of the rows from the spreadsheet.
       doc.getRows(1, function (err, rows) {
         if(!err) {
-          res.json([rows]) //send rows of data as response to api endpoint
+          var sortedArray = sortArrayAscendingOrder(rows)
+          res.json(sortedArray) //send rows of data as response to api endpoint
         } else {
           console.log("err is: ", err)
         }
