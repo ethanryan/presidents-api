@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+
 client_secret.json #NOTE: this needs to be on heroku!
 
 # misc
