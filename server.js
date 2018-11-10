@@ -2,7 +2,7 @@ require('dotenv').config();
 
 var express = require("express");
 
-const fs = require('fs');
+var cors = require('cors')
 
 //var all_prez = require("./data/president_spreadsheet");
 var pizza_data = require("./data/pizza");
