@@ -16,6 +16,8 @@ var doc = new GoogleSpreadsheet(spreadsheetId);
 
 var app = express();
 
+app.use(cors()) //enabling all cors requests
+
 // const port = 3000;
 var port = process.env.PORT || 3000;
 
