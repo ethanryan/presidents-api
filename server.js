@@ -113,7 +113,7 @@ app.get("/presidents/:order", (req, res) => {
       doc.getRows(1, function (err, rows) {
         if(!err) {
           var sortedArray = sortArrayAscendingOrder(rows) //ascending is the default order
-          if (order === orderAscending || order === "orderAscending") { //sring right???
+          if (order === "orderAscending") { //sring right???
             console.log("req.query.order === orderAscending!!!!!!")
             // sortedArray = sortArrayAscendingOrder(rows)
           } else {
