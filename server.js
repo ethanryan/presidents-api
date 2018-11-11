@@ -66,6 +66,10 @@ function helloWorld() {
   console.log("sup yall")
 }
 
+app.get("/clicked", (req, res) => {
+ console.log("button got clicked on the frontend babbyyyyyyy!!!!")
+});
+
 app.get("/presidents", (req, res) => {
   // Authenticate with the Google Spreadsheets API.
   doc.useServiceAccountAuth(creds, function (err) {
