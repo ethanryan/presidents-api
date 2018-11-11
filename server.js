@@ -97,7 +97,7 @@ app.get("/presidents", (req, res) => {
   });
 })
 
-app.get("/presidents/order", (req, res) => {
+app.get("/presidents?order", (req, res) => {
 
   console.log("req.query.order is: ", req.query.order)
 
