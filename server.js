@@ -76,7 +76,7 @@ app.get("/clicked", (req, res) => {
 
 app.get("/presidents", (req, res) => {
 
-  console.log("req.query.order is: ", req.query.order)
+  // console.log("req.query.order is: ", req.query.order)
 
   // Authenticate with the Google Spreadsheets API.
   doc.useServiceAccountAuth(creds, function (err) {
@@ -84,9 +84,6 @@ app.get("/presidents", (req, res) => {
       doc.getRows(1, function (err, rows) {
         if(!err) {
           var sortedArray = sortArrayAscendingOrder(rows)
-          if (req.query.order === orderDescending) {
-            sortedArray = sortArrayDescendingOrder(rows)
-          }
           res.json(sortedArray) //send rows of data as response to api endpoint
         } else {
           console.log("err is: ", err)
@@ -94,6 +91,14 @@ app.get("/presidents", (req, res) => {
       });
   });
 })
+
+
+/////ABOVE IS FINE, dont FUCK with it...
+/////ABOVE IS FINE, dont FUCK with it...
+/////ABOVE IS FINE, dont FUCK with it...
+/////ABOVE IS FINE, dont FUCK with it...
+/////ABOVE IS FINE, dont FUCK with it...
+/////ABOVE IS FINE, dont FUCK with it...
 
 app.get("/presidents/:order", (req, res) => {
 
