@@ -4,8 +4,7 @@ var express = require("express");
 
 var cors = require('cors')
 
-//var all_prez = require("./data/president_spreadsheet");
-var pizza_data = require("./data/pizza");
+// var pizza_data = require("./data/pizza");
 
 var GoogleSpreadsheet = require('google-spreadsheet');
 var creds = require('./data/client_secret.json');
@@ -18,24 +17,12 @@ var app = express();
 
 app.use(cors()) //enabling all cors requests
 
-// const port = 3000;
 var port = process.env.PORT || 3000;
 
 
 app.listen(port, () => {
   console.log("Server running on port:", port);
 });
-
-
-// app.get("/url", (req, res) => {
-//  res.json(["Tony","Lisa","Michael","Ginger","Food"]);
-// });
-
-app.get("/pizza", (req, res) => {
-  // res.json("piiiizzaaaaaa")
-  res.json([pizza_data])
-})
-
 
 function compareNamesAscending(a,b) {
   if (a.president < b.president)
@@ -53,7 +40,6 @@ function compareNamesDescending(a,b) {
   return 0;
 }
 
-
 function sortArrayAscendingOrder(array) {
  return array.sort(compareNamesAscending)
 }
@@ -62,43 +48,26 @@ function sortArrayDescendingOrder(array) {
  return array.sort(compareNamesDescending)
 }
 
-function helloWorld() {
-  console.log("sup yall")
-}
 
-app.get("/clicked", (req, res) => {
- console.log("button got clicked on the frontend babbyyyyyyy!!!!")
- console.log("req.query is: ", req.query)
- console.log("req.query.order is: ", req.query.order)
- // console.log("req is: ", req);
- // console.log("req.body is: ", req.body);
-});
+//NOTE: this works, but only need one api endpoint, below
+// app.get("/presidents", (req, res) => {
+//
+//   // console.log("req.query.order is: ", req.query.order)
+//
+//   // Authenticate with the Google Spreadsheets API.
+//   doc.useServiceAccountAuth(creds, function (err) {
+//     // Get all of the rows from the spreadsheet.
+//       doc.getRows(1, function (err, rows) {
+//         if(!err) {
+//           var sortedArray = sortArrayAscendingOrder(rows)
+//           res.json(sortedArray) //send rows of data as response to api endpoint
+//         } else {
+//           console.log("err is: ", err)
+//         }
+//       });
+//   });
+// })
 
-app.get("/presidents", (req, res) => {
-
-  // console.log("req.query.order is: ", req.query.order)
-
-  // Authenticate with the Google Spreadsheets API.
-  doc.useServiceAccountAuth(creds, function (err) {
-    // Get all of the rows from the spreadsheet.
-      doc.getRows(1, function (err, rows) {
-        if(!err) {
-          var sortedArray = sortArrayAscendingOrder(rows)
-          res.json(sortedArray) //send rows of data as response to api endpoint
-        } else {
-          console.log("err is: ", err)
-        }
-      });
-  });
-})
-
-
-/////ABOVE IS FINE, dont FUCK with it...
-/////ABOVE IS FINE, dont FUCK with it...
-/////ABOVE IS FINE, dont FUCK with it...
-/////ABOVE IS FINE, dont FUCK with it...
-/////ABOVE IS FINE, dont FUCK with it...
-/////ABOVE IS FINE, dont FUCK with it...
 
 app.get("/presidents/:order", (req, res) => {
 
@@ -113,11 +82,11 @@ app.get("/presidents/:order", (req, res) => {
       doc.getRows(1, function (err, rows) {
         if(!err) {
           var sortedArray = sortArrayAscendingOrder(rows) //ascending is the default order
-          if (order === "orderAscending") { //sring right???
-            console.log("order === orderAscending!!!!!!")
+          if (order === "orderAscending") {
+            // console.log("order === orderAscending!")
             sortedArray = sortArrayAscendingOrder(rows)
           } else {
-            console.log("order === orderDescending!!!!!!")
+            // console.log("order === orderDescending!")
             sortedArray = sortArrayDescendingOrder(rows)
           }
           res.json(sortedArray) //send rows of data as response to api endpoint
@@ -127,20 +96,3 @@ app.get("/presidents/:order", (req, res) => {
       });
   });
 })
-
-// app.put("/presidents/:presidentId", (req, res) => {
-//   console.log("put request, req.params is: ", req.params)
-//   // Authenticate with the Google Spreadsheets API.
-//   doc.useServiceAccountAuth(creds, function (err) {
-//     // Get all of the rows from the spreadsheet.
-//       doc.getRows(1, function (err, rows) {
-//         if(!err) {
-//           // var sortedArray = sortArrayAscendingOrder(rows)
-//           var sortedArray = sortArrayAscendingOrder(rows) //this depends on data from frontend.....
-//           res.json(sortedArray) //send rows of data as response to api endpoint
-//         } else {
-//           console.log("err is: ", err)
-//         }
-//       });
-//   });
-// })
