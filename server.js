@@ -95,8 +95,11 @@ app.get("/presidents", (req, res) => {
   });
 })
 
-app.get("/presidents?order", (req, res) => {
+app.get("/presidents/:order", (req, res) => {
 
+  var order = req.query.order
+
+  console.log("req.params.order is: ", req.params.order) //curious if this is the same...
   console.log("req.query.order is: ", req.query.order)
 
   // Authenticate with the Google Spreadsheets API.
@@ -104,8 +107,8 @@ app.get("/presidents?order", (req, res) => {
     // Get all of the rows from the spreadsheet.
       doc.getRows(1, function (err, rows) {
         if(!err) {
-          var sortedArray = sortArrayAscendingOrder(rows)
-          if (req.query.order === orderAscending) {
+          var sortedArray = sortArrayAscendingOrder(rows) //ascending is the default order
+          if (req.query.order === orderAscending || req.query.order === "orderAscending") { //sring right???
             console.log("req.query.order === orderAscending!!!!!!")
             // sortedArray = sortArrayAscendingOrder(rows)
           } else {
