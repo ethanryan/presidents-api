@@ -102,10 +102,10 @@ app.get("/presidents", (req, res) => {
 
 app.get("/presidents/:order", (req, res) => {
 
-  var order = req.query.order
+  var order = req.params.order
 
-  console.log("req.params.order is: ", req.params.order) //curious if this is the same...
-  console.log("req.query.order is: ", req.query.order)
+  console.log("req.params.order is: ", req.params.order) //this is with :order
+  // console.log("req.query.order is: ", req.query.order) //this is with ?order
 
   // Authenticate with the Google Spreadsheets API.
   doc.useServiceAccountAuth(creds, function (err) {
@@ -113,7 +113,7 @@ app.get("/presidents/:order", (req, res) => {
       doc.getRows(1, function (err, rows) {
         if(!err) {
           var sortedArray = sortArrayAscendingOrder(rows) //ascending is the default order
-          if (req.query.order === orderAscending || req.query.order === "orderAscending") { //sring right???
+          if (order === orderAscending || order === "orderAscending") { //sring right???
             console.log("req.query.order === orderAscending!!!!!!")
             // sortedArray = sortArrayAscendingOrder(rows)
           } else {
