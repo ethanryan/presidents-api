@@ -68,6 +68,8 @@ function helloWorld() {
 
 app.get("/clicked", (req, res) => {
  console.log("button got clicked on the frontend babbyyyyyyy!!!!")
+ console.log("req is: ", req);
+ console.log("req.body is: ", req.body);
 });
 
 app.get("/presidents", (req, res) => {
