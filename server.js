@@ -114,11 +114,11 @@ app.get("/presidents/:order", (req, res) => {
         if(!err) {
           var sortedArray = sortArrayAscendingOrder(rows) //ascending is the default order
           if (order === "orderAscending") { //sring right???
-            console.log("req.query.order === orderAscending!!!!!!")
-            // sortedArray = sortArrayAscendingOrder(rows)
+            console.log("order === orderAscending!!!!!!")
+            sortedArray = sortArrayAscendingOrder(rows)
           } else {
-            console.log("req.query.order === orderDescending!!!!!!")
-            // sortedArray = sortArrayDescendingOrder(rows)
+            console.log("order === orderDescending!!!!!!")
+            sortedArray = sortArrayDescendingOrder(rows)
           }
           res.json(sortedArray) //send rows of data as response to api endpoint
         } else {
