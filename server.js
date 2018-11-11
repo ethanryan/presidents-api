@@ -4,8 +4,6 @@ var express = require("express");
 
 var cors = require('cors')
 
-// var pizza_data = require("./data/pizza");
-
 var GoogleSpreadsheet = require('google-spreadsheet');
 var creds = require('./data/client_secret.json');
 
@@ -49,32 +47,12 @@ function sortArrayDescendingOrder(array) {
 }
 
 
-//NOTE: this works, but only need one api endpoint, below
-// app.get("/presidents", (req, res) => {
-//
-//   // console.log("req.query.order is: ", req.query.order)
-//
-//   // Authenticate with the Google Spreadsheets API.
-//   doc.useServiceAccountAuth(creds, function (err) {
-//     // Get all of the rows from the spreadsheet.
-//       doc.getRows(1, function (err, rows) {
-//         if(!err) {
-//           var sortedArray = sortArrayAscendingOrder(rows)
-//           res.json(sortedArray) //send rows of data as response to api endpoint
-//         } else {
-//           console.log("err is: ", err)
-//         }
-//       });
-//   });
-// })
-
-
 app.get("/presidents/:order", (req, res) => {
-
-  var order = req.params.order
 
   console.log("req.params.order is: ", req.params.order) //this is with :order
   // console.log("req.query.order is: ", req.query.order) //this is with ?order
+
+  var order = req.params.order
 
   // Authenticate with the Google Spreadsheets API.
   doc.useServiceAccountAuth(creds, function (err) {
