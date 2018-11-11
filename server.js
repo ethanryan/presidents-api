@@ -88,7 +88,7 @@ app.get("/presidents", (req, res) => {
   });
 })
 
-app.put("/presidents", (req, res) => {
+app.put("/presidents/:presidentId", (req, res) => {
   console.log("put request, req.params is: ", req.params)
   // Authenticate with the Google Spreadsheets API.
   doc.useServiceAccountAuth(creds, function (err) {
