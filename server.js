@@ -68,8 +68,10 @@ function helloWorld() {
 
 app.get("/clicked", (req, res) => {
  console.log("button got clicked on the frontend babbyyyyyyy!!!!")
+ console.log("req.query is: ", req.query)
+ console.log("req.query.order is: ", req.query.order)
  // console.log("req is: ", req);
- console.log("req.body is: ", req.body);
+ // console.log("req.body is: ", req.body);
 });
 
 app.get("/presidents", (req, res) => {
@@ -88,19 +90,19 @@ app.get("/presidents", (req, res) => {
   });
 })
 
-app.put("/presidents/:presidentId", (req, res) => {
-  console.log("put request, req.params is: ", req.params)
-  // Authenticate with the Google Spreadsheets API.
-  doc.useServiceAccountAuth(creds, function (err) {
-    // Get all of the rows from the spreadsheet.
-      doc.getRows(1, function (err, rows) {
-        if(!err) {
-          // var sortedArray = sortArrayAscendingOrder(rows)
-          var sortedArray = sortArrayAscendingOrder(rows) //this depends on data from frontend.....
-          res.json(sortedArray) //send rows of data as response to api endpoint
-        } else {
-          console.log("err is: ", err)
-        }
-      });
-  });
-})
+// app.put("/presidents/:presidentId", (req, res) => {
+//   console.log("put request, req.params is: ", req.params)
+//   // Authenticate with the Google Spreadsheets API.
+//   doc.useServiceAccountAuth(creds, function (err) {
+//     // Get all of the rows from the spreadsheet.
+//       doc.getRows(1, function (err, rows) {
+//         if(!err) {
+//           // var sortedArray = sortArrayAscendingOrder(rows)
+//           var sortedArray = sortArrayAscendingOrder(rows) //this depends on data from frontend.....
+//           res.json(sortedArray) //send rows of data as response to api endpoint
+//         } else {
+//           console.log("err is: ", err)
+//         }
+//       });
+//   });
+// })
