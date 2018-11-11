@@ -10,8 +10,8 @@ This app is hosted on Heroku.
 
 Note: the GoogleSpreadsheet client_secret.json file is hidden from this GitHub repo.
 
-Screenshot of frontend:
+Screenshot of [frontend](http://jsfiddle.net/ethanryan/Levs4rmb/):
 
 ![presidents frontend](https://github.com/ethanryan/presidents-api/blob/master/frontend/frontend-screenshot.png)
 
-Frontend React app is available on jsfiddle here: [http://jsfiddle.net/ethanryan/Levs4rmb/]
+Frontend React app is available on jsfiddle here: http://jsfiddle.net/ethanryan/Levs4rmb/
