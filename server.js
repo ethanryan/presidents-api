@@ -105,11 +105,13 @@ app.get("/presidents?order", (req, res) => {
       doc.getRows(1, function (err, rows) {
         if(!err) {
           var sortedArray = sortArrayAscendingOrder(rows)
-          // if (req.query.order === orderAscending) {
-          //   sortedArray = sortArrayAscendingOrder(rows)
-          // } else {
-          //   sortedArray = sortArrayDescendingOrder(rows)
-          // }
+          if (req.query.order === orderAscending) {
+            console.log("req.query.order === orderAscending!!!!!!")
+            // sortedArray = sortArrayAscendingOrder(rows)
+          } else {
+            console.log("req.query.order === orderDescending!!!!!!")
+            // sortedArray = sortArrayDescendingOrder(rows)
+          }
           res.json(sortedArray) //send rows of data as response to api endpoint
         } else {
           console.log("err is: ", err)
