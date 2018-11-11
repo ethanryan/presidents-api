@@ -84,7 +84,7 @@ app.get("/presidents", (req, res) => {
       doc.getRows(1, function (err, rows) {
         if(!err) {
           var sortedArray = sortArrayAscendingOrder(rows)
-          if (req.query.order === "orderAscending") {
+          if (req.query.order === orderAscending) {
             sortedArray = sortArrayAscendingOrder(rows)
           } else {
             sortedArray = sortArrayDescendingOrder(rows)
