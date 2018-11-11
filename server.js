@@ -68,8 +68,24 @@ function helloWorld() {
 
 app.get("/clicked", (req, res) => {
  console.log("button got clicked on the frontend babbyyyyyyy!!!!")
- console.log("req is: ", req);
+ // console.log("req is: ", req);
  console.log("req.body is: ", req.body);
+
+ app.get("/presidents", (req, res) => {
+   // Authenticate with the Google Spreadsheets API.
+   doc.useServiceAccountAuth(creds, function (err) {
+     // Get all of the rows from the spreadsheet.
+       doc.getRows(1, function (err, rows) {
+         if(!err) {
+           // var sortedArray = sortArrayAscendingOrder(rows)
+           var sortedArray = sortArrayAscendingOrder(rows)
+           res.json(sortedArray) //send rows of data as response to api endpoint
+         } else {
+           console.log("err is: ", err)
+         }
+       });
+   });
+ }) //trying this.......
 });
 
 app.get("/presidents", (req, res) => {
