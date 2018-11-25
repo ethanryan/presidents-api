@@ -8,7 +8,7 @@ Data is stored in a Google Sheet, and accessed via the Google Sheets API.
 
 This app is hosted on Heroku.
 
-Note: the GoogleSpreadsheet client_secret.json file is hidden from this GitHub repo.
+Note: the GoogleSpreadsheet client_secret.json file is hidden from this GitHub repo. When updating this Node app, make sure data/client_secret.json is not being ignored by Heroku.
 
 Screenshot of [frontend](http://jsfiddle.net/ethanryan/Levs4rmb/):
 
