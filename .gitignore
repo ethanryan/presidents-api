@@ -1,8 +1,8 @@
 # dependencies
 /node_modules
 
-#/data #NOTE: uncomment this line and next when pushing to heroku
-#client_secret.json #NOTE: this needs to be on heroku!
+/data #NOTE: uncomment this line and next when pushing to heroku
+client_secret.json #NOTE: this needs to be on heroku!
 
 # misc
 .DS_Store
