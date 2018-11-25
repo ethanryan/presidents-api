@@ -1,8 +1,7 @@
 # dependencies
 /node_modules
 
-/data
-client_secret.json #NOTE: this needs to be on heroku!
+
 
 # misc
 .DS_Store
