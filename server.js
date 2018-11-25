@@ -38,14 +38,28 @@ function compareNamesDescending(a,b) {
   return 0;
 }
 
-function sortArrayAscendingOrder(array) {
- return array.sort(compareNamesAscending)
-}
+// function compareNames(a,b, order) {
+//   if
+// }
 
-function sortArrayDescendingOrder(array) {
- return array.sort(compareNamesDescending)
-}
+// function sortArrayAscendingOrder(array) {
+//  return array.sort(compareNamesAscending)
+// }
+//
+// function sortArrayDescendingOrder(array) {
+//  return array.sort(compareNamesDescending)
+// }
 
+
+function sortArray(array, order) {
+  console.log('in sortArray, order is: ', order)
+  if (order === "orderAscending") {
+    return array.sort(compareNamesAscending)
+    // return array.sort(compareNames(order) ) //check how to refactor this with just one function
+  } else {
+    return array.sort(compareNamesDescending)
+  }
+}
 
 app.get("/presidents/:order", (req, res) => {
 
@@ -53,20 +67,25 @@ app.get("/presidents/:order", (req, res) => {
   // console.log("req.query.order is: ", req.query.order) //this is with ?order
 
   var order = req.params.order
+  console.log("1. order is: ", order) //this is with :order
+
 
   // Authenticate with the Google Spreadsheets API.
   doc.useServiceAccountAuth(creds, function (err) {
     // Get all of the rows from the spreadsheet.
       doc.getRows(1, function (err, rows) {
         if(!err) {
-          var sortedArray = sortArrayAscendingOrder(rows) //ascending is the default order
-          if (order === "orderAscending") {
-            // console.log("order === orderAscending!")
-            sortedArray = sortArrayAscendingOrder(rows)
-          } else {
-            // console.log("order === orderDescending!")
-            sortedArray = sortArrayDescendingOrder(rows)
-          }
+          // var sortedArray = sortArrayAscendingOrder(rows) //ascending is the default order
+          var sortedArray = sortArray(rows, order)
+          // if (order === "orderAscending") {
+          //   console.log("order === orderAscending!")
+          //   //sortedArray = sortArrayAscendingOrder(rows)
+          //   sortedArray = sortArray(rows, "orderAscending")
+          // } else {
+          //   console.log("order === orderDescending!")
+          //   //sortedArray = sortArrayDescendingOrder(rows)
+          //   sortedArray = sortArray(rows, "orderDescending")
+          // }
           res.json(sortedArray) //send rows of data as response to api endpoint
         } else {
           console.log("err is: ", err)
