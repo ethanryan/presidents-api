@@ -19,3 +19,5 @@ Screenshot of [frontend](http://jsfiddle.net/ethanryan/Levs4rmb/):
 ![presidents frontend](https://github.com/ethanryan/presidents-api/blob/master/frontend/frontend-screenshot.png)
 
 Frontend React app is available on jsfiddle here: http://jsfiddle.net/ethanryan/Levs4rmb/
+
+Frontend React app version 2 is on jsfiddle here: http://jsfiddle.net/ethanryan/ht02xdqe/
