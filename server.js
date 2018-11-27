@@ -4,12 +4,16 @@ var express = require("express");
 
 var cors = require('cors')
 
-var GoogleSpreadsheet = require('google-spreadsheet');
-var creds = require('./data/client_secret.json');
+// var GoogleSpreadsheet = require('google-spreadsheet');
+// var creds = require('./data/client_secret.json');
 
 // Create a document object using the ID of the spreadsheet - obtained from its URL.
-var spreadsheetId = '1tpzXkd0eMJZtAMo8lZ2gvcqCMx_ku4kx_FUOZvh8x20'
-var doc = new GoogleSpreadsheet(spreadsheetId);
+// var spreadsheetId = '1tpzXkd0eMJZtAMo8lZ2gvcqCMx_ku4kx_FUOZvh8x20'
+// var doc = new GoogleSpreadsheet(spreadsheetId);
+
+var prezData = require('./presidents.json')
+
+// console.log('0. prezData is: ', prezData)
 
 var app = express();
 
@@ -23,17 +27,17 @@ app.listen(port, () => {
 });
 
 function compareNamesAscending(a,b) {
-  if (a.president < b.president)
+  if (a.President < b.President)
     return -1;
-  if (a.president > b.president)
+  if (a.President > b.President)
     return 1;
   return 0;
 }
 
 function compareNamesDescending(a,b) {
-  if (a.president < b.president)
+  if (a.President < b.President)
     return 1;
-  if (a.president > b.president)
+  if (a.President > b.President)
     return -1;
   return 0;
 }
@@ -59,16 +63,37 @@ app.get("/presidents/:order", (req, res) => {
   var order = req.params.order
   console.log("1. order is: ", order) //this is with :order
 
+  // // Authenticate with the Google Spreadsheets API.
+  // doc.useServiceAccountAuth(creds, function (err) {
+  //   // Get all of the rows from the spreadsheet.
+  //     doc.getRows(1, function (err, rows) {
+  //       if(!err) {
+  //         var sortedArray = sortArray(rows, order)
+  //         res.json(sortedArray) //send rows of data as response to api endpoint
+  //       } else {
+  //         console.log("err is: ", err)
+  //       }
+  //     });
+  // });
+
+
   // Authenticate with the Google Spreadsheets API.
-  doc.useServiceAccountAuth(creds, function (err) {
+  // doc.useServiceAccountAuth(creds, function (err) {
     // Get all of the rows from the spreadsheet.
-      doc.getRows(1, function (err, rows) {
-        if(!err) {
-          var sortedArray = sortArray(rows, order)
+      // doc.getRows(1, function (err, rows) {
+        // if(!err) {
+          // var sortedArray = sortArray(rows, order)
+          var sortedArray = sortArray(prezData, order)
+          console.log('1. sortedArray is: ', sortedArray)
           res.json(sortedArray) //send rows of data as response to api endpoint
-        } else {
-          console.log("err is: ", err)
-        }
-      });
-  });
+        // } else {
+          // console.log("err is: ", err)
+        // }
+      // });
+  // });
+
 })
+
+
+// var sortedArrayTest = sortArray(prezData, "orderAscending")
+// console.log('1. sortedArrayTest is: ', sortedArrayTest)
