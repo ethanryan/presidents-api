@@ -27,17 +27,17 @@ app.listen(port, () => {
 });
 
 function compareNamesAscending(a,b) {
-  if (a.President < b.President)
+  if (a.president < b.president)
     return -1;
-  if (a.President > b.President)
+  if (a.president > b.president)
     return 1;
   return 0;
 }
 
 function compareNamesDescending(a,b) {
-  if (a.President < b.President)
+  if (a.president < b.president)
     return 1;
-  if (a.President > b.President)
+  if (a.president > b.president)
     return -1;
   return 0;
 }

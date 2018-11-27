@@ -1,310 +1,310 @@
 [
  {
-   "President": "George Washington",
-   "Birthday": "1732-2-22",
-   "Birthplace": "Westmoreland Co., Va.",
-   "Death day": "1799-12-14",
-   "Death place": "Mount Vernon, Va."
+   "president": "George Washington",
+   "birthday": "1732-2-22",
+   "birthplace": "Westmoreland Co., Va.",
+   "deathday": "1799-12-14",
+   "deathplace": "Mount Vernon, Va."
  },
  {
-   "President": "John Adams",
-   "Birthday": "1735-10-30",
-   "Birthplace": "Quincy, Mass.",
-   "Death day": "1826-7-4",
-   "Death place": "Quincy, Mass."
+   "president": "John Adams",
+   "birthday": "1735-10-30",
+   "birthplace": "Quincy, Mass.",
+   "deathday": "1826-7-4",
+   "deathplace": "Quincy, Mass."
  },
  {
-   "President": "Thomas Jefferson",
-   "Birthday": "1743-4-13",
-   "Birthplace": "Albemarle Co., Va.",
-   "Death day": "1826-7-4",
-   "Death place": "Albemarle Co., Va."
+   "president": "Thomas Jefferson",
+   "birthday": "1743-4-13",
+   "birthplace": "Albemarle Co., Va.",
+   "deathday": "1826-7-4",
+   "deathplace": "Albemarle Co., Va."
  },
  {
-   "President": "James Madison",
-   "Birthday": "1751-3-16",
-   "Birthplace": "Port Conway, Va.",
-   "Death day": "1836-6-28",
-   "Death place": "Orange Co., Va."
+   "president": "James Madison",
+   "birthday": "1751-3-16",
+   "birthplace": "Port Conway, Va.",
+   "deathday": "1836-6-28",
+   "deathplace": "Orange Co., Va."
  },
  {
-   "President": "James Monroe",
-   "Birthday": "1758-4-28",
-   "Birthplace": "Westmoreland Co., Va.",
-   "Death day": "1831-7-4",
-   "Death place": "New York, New York"
+   "president": "James Monroe",
+   "birthday": "1758-4-28",
+   "birthplace": "Westmoreland Co., Va.",
+   "deathday": "1831-7-4",
+   "deathplace": "New York, New York"
  },
  {
-   "President": "John Quincy Adams",
-   "Birthday": "1767-7-11",
-   "Birthplace": "Quincy, Mass.",
-   "Death day": "1848-2-23",
-   "Death place": "Washington, D.C."
+   "president": "John Quincy Adams",
+   "birthday": "1767-7-11",
+   "birthplace": "Quincy, Mass.",
+   "deathday": "1848-2-23",
+   "deathplace": "Washington, D.C."
  },
  {
-   "President": "Andrew Jackson",
-   "Birthday": "1767-3-15",
-   "Birthplace": "Waxhaws, No./So. Carolina",
-   "Death day": "1845-6-8",
-   "Death place": "Nashville, Tennessee"
+   "president": "Andrew Jackson",
+   "birthday": "1767-3-15",
+   "birthplace": "Waxhaws, No./So. Carolina",
+   "deathday": "1845-6-8",
+   "deathplace": "Nashville, Tennessee"
  },
  {
-   "President": "Martin Van Buren",
-   "Birthday": "1782-12-5",
-   "Birthplace": "Kinderhook, New York",
-   "Death day": "1862-7-24",
-   "Death place": "Kinderhook, New York"
+   "president": "Martin Van Buren",
+   "birthday": "1782-12-5",
+   "birthplace": "Kinderhook, New York",
+   "deathday": "1862-7-24",
+   "deathplace": "Kinderhook, New York"
  },
  {
-   "President": "William Henry Harrison",
-   "Birthday": "1773-2-9",
-   "Birthplace": "Charles City Co., Va.",
-   "Death day": "1841-4-4",
-   "Death place": "Washington, D.C."
+   "president": "William Henry Harrison",
+   "birthday": "1773-2-9",
+   "birthplace": "Charles City Co., Va.",
+   "deathday": "1841-4-4",
+   "deathplace": "Washington, D.C."
  },
  {
-   "President": "John Tyler",
-   "Birthday": "1790-3-29",
-   "Birthplace": "Charles City Co., Va.",
-   "Death day": "1862-1-18",
-   "Death place": "Richmond, Va."
+   "president": "John Tyler",
+   "birthday": "1790-3-29",
+   "birthplace": "Charles City Co., Va.",
+   "deathday": "1862-1-18",
+   "deathplace": "Richmond, Va."
  },
  {
-   "President": "James K. Polk",
-   "Birthday": "1795-11-2",
-   "Birthplace": "Mecklenburg Co., N.C.",
-   "Death day": "1849-6-15",
-   "Death place": "Nashville, Tennessee"
+   "president": "James K. Polk",
+   "birthday": "1795-11-2",
+   "birthplace": "Mecklenburg Co., N.C.",
+   "deathday": "1849-6-15",
+   "deathplace": "Nashville, Tennessee"
  },
  {
-   "President": "Zachary Taylor",
-   "Birthday": "1784-11-24",
-   "Birthplace": "Orange County, Va.",
-   "Death day": "1850-7-9",
-   "Death place": "Washington, D.C"
+   "president": "Zachary Taylor",
+   "birthday": "1784-11-24",
+   "birthplace": "Orange County, Va.",
+   "deathday": "1850-7-9",
+   "deathplace": "Washington, D.C"
  },
  {
-   "President": "Millard Fillmore",
-   "Birthday": "1800-1-7",
-   "Birthplace": "Cayuga Co., New York",
-   "Death day": "1874-3-8",
-   "Death place": "Buffalo, New York"
+   "president": "Millard Fillmore",
+   "birthday": "1800-1-7",
+   "birthplace": "Cayuga Co., New York",
+   "deathday": "1874-3-8",
+   "deathplace": "Buffalo, New York"
  },
  {
-   "President": "Franklin Pierce",
-   "Birthday": "1804-11-23",
-   "Birthplace": "Hillsborough, N.H.",
-   "Death day": "1869-10-8",
-   "Death place": "Concord, New Hamp."
+   "president": "Franklin Pierce",
+   "birthday": "1804-11-23",
+   "birthplace": "Hillsborough, N.H.",
+   "deathday": "1869-10-8",
+   "deathplace": "Concord, New Hamp."
  },
  {
-   "President": "James Buchanan",
-   "Birthday": "1791-4-23",
-   "Birthplace": "Cove Gap, Pa.",
-   "Death day": "1868-6-1",
-   "Death place": "Lancaster, Pa."
+   "president": "James Buchanan",
+   "birthday": "1791-4-23",
+   "birthplace": "Cove Gap, Pa.",
+   "deathday": "1868-6-1",
+   "deathplace": "Lancaster, Pa."
  },
  {
-   "President": "Abraham Lincoln",
-   "Birthday": "1809-2-12",
-   "Birthplace": "LaRue Co., Kentucky",
-   "Death day": "1865-4-15",
-   "Death place": "Washington, D.C."
+   "president": "Abraham Lincoln",
+   "birthday": "1809-2-12",
+   "birthplace": "LaRue Co., Kentucky",
+   "deathday": "1865-4-15",
+   "deathplace": "Washington, D.C."
  },
  {
-   "President": "Andrew Johnson",
-   "Birthday": "1808-12-29",
-   "Birthplace": "Raleigh, North Carolina",
-   "Death day": "1875-7-31",
-   "Death place": "Elizabethton, Tenn."
+   "president": "Andrew Johnson",
+   "birthday": "1808-12-29",
+   "birthplace": "Raleigh, North Carolina",
+   "deathday": "1875-7-31",
+   "deathplace": "Elizabethton, Tenn."
  },
  {
-   "President": "Ulysses S. Grant",
-   "Birthday": "1822-4-27",
-   "Birthplace": "Point Pleasant, Ohio",
-   "Death day": "1885-7-23",
-   "Death place": "Wilton, New York"
+   "president": "Ulysses S. Grant",
+   "birthday": "1822-4-27",
+   "birthplace": "Point Pleasant, Ohio",
+   "deathday": "1885-7-23",
+   "deathplace": "Wilton, New York"
  },
  {
-   "President": "Rutherford B. Hayes",
-   "Birthday": "1822-10-4",
-   "Birthplace": "Delaware, Ohio",
-   "Death day": "1893-1-17",
-   "Death place": "Fremont, Ohio"
+   "president": "Rutherford B. Hayes",
+   "birthday": "1822-10-4",
+   "birthplace": "Delaware, Ohio",
+   "deathday": "1893-1-17",
+   "deathplace": "Fremont, Ohio"
  },
  {
-   "President": "James A. Garfield",
-   "Birthday": "1831-11-19",
-   "Birthplace": "Cuyahoga Co., Ohio",
-   "Death day": "1881-9-19",
-   "Death place": "Elberon, New Jersey"
+   "president": "James A. Garfield",
+   "birthday": "1831-11-19",
+   "birthplace": "Cuyahoga Co., Ohio",
+   "deathday": "1881-9-19",
+   "deathplace": "Elberon, New Jersey"
  },
  {
-   "President": "Chester Arthur",
-   "Birthday": "1829-10-5",
-   "Birthplace": "Fairfield, Vermont",
-   "Death day": "1886-11-18",
-   "Death place": "New York, New York"
+   "president": "Chester Arthur",
+   "birthday": "1829-10-5",
+   "birthplace": "Fairfield, Vermont",
+   "deathday": "1886-11-18",
+   "deathplace": "New York, New York"
  },
  {
-   "President": "Grover Cleveland",
-   "Birthday": "1837-3-18",
-   "Birthplace": "Caldwell, New Jersey",
-   "Death day": "1908-6-24",
-   "Death place": "Princeton, New Jersey"
+   "president": "Grover Cleveland",
+   "birthday": "1837-3-18",
+   "birthplace": "Caldwell, New Jersey",
+   "deathday": "1908-6-24",
+   "deathplace": "Princeton, New Jersey"
  },
  {
-   "President": "Benjamin Harrison",
-   "Birthday": "1833-8-20",
-   "Birthplace": "North Bend, Ohio",
-   "Death day": "1901-3-13",
-   "Death place": "Indianapolis, Indiana"
+   "president": "Benjamin Harrison",
+   "birthday": "1833-8-20",
+   "birthplace": "North Bend, Ohio",
+   "deathday": "1901-3-13",
+   "deathplace": "Indianapolis, Indiana"
  },
  {
-   "President": "William McKinley",
-   "Birthday": "1843-1-29",
-   "Birthplace": "Niles, Ohio",
-   "Death day": "1901-9-14",
-   "Death place": "Buffalo, New York"
+   "president": "William McKinley",
+   "birthday": "1843-1-29",
+   "birthplace": "Niles, Ohio",
+   "deathday": "1901-9-14",
+   "deathplace": "Buffalo, New York"
  },
  {
-   "President": "Theodore Roosevelt",
-   "Birthday": "1858-10-27",
-   "Birthplace": "New York, New York",
-   "Death day": "1919-1-6",
-   "Death place": "Oyster Bay, New York"
+   "president": "Theodore Roosevelt",
+   "birthday": "1858-10-27",
+   "birthplace": "New York, New York",
+   "deathday": "1919-1-6",
+   "deathplace": "Oyster Bay, New York"
  },
  {
-   "President": "William Howard Taft",
-   "Birthday": "1857-9-15",
-   "Birthplace": "Cincinnati, Ohio",
-   "Death day": "1930-3-8",
-   "Death place": "Washington, D.C."
+   "president": "William Howard Taft",
+   "birthday": "1857-9-15",
+   "birthplace": "Cincinnati, Ohio",
+   "deathday": "1930-3-8",
+   "deathplace": "Washington, D.C."
  },
  {
-   "President": "Woodrow Wilson",
-   "Birthday": "1856-12-28",
-   "Birthplace": "Staunton, Virginia",
-   "Death day": "1924-2-3",
-   "Death place": "Washington, D.C."
+   "president": "Woodrow Wilson",
+   "birthday": "1856-12-28",
+   "birthplace": "Staunton, Virginia",
+   "deathday": "1924-2-3",
+   "deathplace": "Washington, D.C."
  },
  {
-   "President": "Warren G. Harding",
-   "Birthday": "1865-11-2",
-   "Birthplace": "Morrow County, Ohio",
-   "Death day": "1923-8-2",
-   "Death place": "San Francisco, Cal."
+   "president": "Warren G. Harding",
+   "birthday": "1865-11-2",
+   "birthplace": "Morrow County, Ohio",
+   "deathday": "1923-8-2",
+   "deathplace": "San Francisco, Cal."
  },
  {
-   "President": "Calvin Coolidge",
-   "Birthday": "1872-7-4",
-   "Birthplace": "Plymouth, Vermont",
-   "Death day": "1933-1-5",
-   "Death place": "Northampton, Mass."
+   "president": "Calvin Coolidge",
+   "birthday": "1872-7-4",
+   "birthplace": "Plymouth, Vermont",
+   "deathday": "1933-1-5",
+   "deathplace": "Northampton, Mass."
  },
  {
-   "President": "Herbert Hoover",
-   "Birthday": "1874-8-10",
-   "Birthplace": "West Branch, Iowa",
-   "Death day": "1964-10-20",
-   "Death place": "New York, New York"
+   "president": "Herbert Hoover",
+   "birthday": "1874-8-10",
+   "birthplace": "West Branch, Iowa",
+   "deathday": "1964-10-20",
+   "deathplace": "New York, New York"
  },
  {
-   "President": "Franklin Roosevelt",
-   "Birthday": "1882-1-30",
-   "Birthplace": "Hyde Park, New York",
-   "Death day": "1945-4-12",
-   "Death place": "Warm Springs, Georgia"
+   "president": "Franklin Roosevelt",
+   "birthday": "1882-1-30",
+   "birthplace": "Hyde Park, New York",
+   "deathday": "1945-4-12",
+   "deathplace": "Warm Springs, Georgia"
  },
  {
-   "President": "Harry S. Truman",
-   "Birthday": "1884-5-8",
-   "Birthplace": "Lamar, Missouri",
-   "Death day": "1972-12-26",
-   "Death place": "Kansas City, Missouri"
+   "president": "Harry S. Truman",
+   "birthday": "1884-5-8",
+   "birthplace": "Lamar, Missouri",
+   "deathday": "1972-12-26",
+   "deathplace": "Kansas City, Missouri"
  },
  {
-   "President": "Dwight Eisenhower",
-   "Birthday": "1890-10-14",
-   "Birthplace": "Denison, Texas",
-   "Death day": "1969-3-28",
-   "Death place": "Washington, D.C."
+   "president": "Dwight Eisenhower",
+   "birthday": "1890-10-14",
+   "birthplace": "Denison, Texas",
+   "deathday": "1969-3-28",
+   "deathplace": "Washington, D.C."
  },
  {
-   "President": "John F. Kennedy",
-   "Birthday": "1917-5-29",
-   "Birthplace": "Brookline, Mass.",
-   "Death day": "1963-11-22",
-   "Death place": "Dallas, Texas"
+   "president": "John F. Kennedy",
+   "birthday": "1917-5-29",
+   "birthplace": "Brookline, Mass.",
+   "deathday": "1963-11-22",
+   "deathplace": "Dallas, Texas"
  },
  {
-   "President": "Lyndon B. Johnson",
-   "Birthday": "1908-8-27",
-   "Birthplace": "Gillespie Co., Texas",
-   "Death day": "1973-1-22",
-   "Death place": "Gillespie Co., Texas"
+   "president": "Lyndon B. Johnson",
+   "birthday": "1908-8-27",
+   "birthplace": "Gillespie Co., Texas",
+   "deathday": "1973-1-22",
+   "deathplace": "Gillespie Co., Texas"
  },
  {
-   "President": "Richard Nixon",
-   "Birthday": "1913-1-9",
-   "Birthplace": "Yorba Linda, Cal.",
-   "Death day": "1994-4-22",
-   "Death place": "New York, New York"
+   "president": "Richard Nixon",
+   "birthday": "1913-1-9",
+   "birthplace": "Yorba Linda, Cal.",
+   "deathday": "1994-4-22",
+   "deathplace": "New York, New York"
  },
  {
-   "President": "Gerald Ford",
-   "Birthday": "1913-7-14",
-   "Birthplace": "Omaha, Nebraska",
-   "Death day": "2006-12-26",
-   "Death place": "Rancho Mirage, Cal."
+   "president": "Gerald Ford",
+   "birthday": "1913-7-14",
+   "birthplace": "Omaha, Nebraska",
+   "deathday": "2006-12-26",
+   "deathplace": "Rancho Mirage, Cal."
  },
  {
-   "President": "Jimmy Carter",
-   "Birthday": "1924-10-1",
-   "Birthplace": "Plains, Georgia",
-   "Death day": "",
-   "Death place": ""
+   "president": "Jimmy Carter",
+   "birthday": "1924-10-1",
+   "birthplace": "Plains, Georgia",
+   "deathday": "",
+   "deathplace": ""
  },
  {
-   "President": "Ronald Reagan",
-   "Birthday": "1911-2-6",
-   "Birthplace": "Tampico, Illinois",
-   "Death day": "2004-6-5",
-   "Death place": "Los Angeles, Cal."
+   "president": "Ronald Reagan",
+   "birthday": "1911-2-6",
+   "birthplace": "Tampico, Illinois",
+   "deathday": "2004-6-5",
+   "deathplace": "Los Angeles, Cal."
  },
  {
-   "President": "George Bush",
-   "Birthday": "1924-6-12",
-   "Birthplace": "Milton, Mass.",
-   "Death day": "",
-   "Death place": ""
+   "president": "George Bush",
+   "birthday": "1924-6-12",
+   "birthplace": "Milton, Mass.",
+   "deathday": "",
+   "deathplace": ""
  },
  {
-   "President": "Bill Clinton",
-   "Birthday": "1946-8-19",
-   "Birthplace": "Hope, Arkansas",
-   "Death day": "",
-   "Death place": ""
+   "president": "Bill Clinton",
+   "birthday": "1946-8-19",
+   "birthplace": "Hope, Arkansas",
+   "deathday": "",
+   "deathplace": ""
  },
  {
-   "President": "George W. Bush",
-   "Birthday": "1646-7-6",
-   "Birthplace": "New Haven, Conn.",
-   "Death day": "",
-   "Death place": ""
+   "president": "George W. Bush",
+   "birthday": "1646-7-6",
+   "birthplace": "New Haven, Conn.",
+   "deathday": "",
+   "deathplace": ""
  },
  {
-   "President": "Barack Obama",
-   "Birthday": "1961-8-4",
-   "Birthplace": "Honolulu, Hawaii",
-   "Death day": "",
-   "Death place": ""
+   "president": "Barack Obama",
+   "birthday": "1961-8-4",
+   "birthplace": "Honolulu, Hawaii",
+   "deathday": "",
+   "deathplace": ""
  },
  {
-   "President": "Donald Trump",
-   "Birthday": "1946-6-14",
-   "Birthplace": "New York, New York",
-   "Death day": "",
-   "Death place": ""
+   "president": "Donald Trump",
+   "birthday": "1946-6-14",
+   "birthplace": "New York, New York",
+   "deathday": "",
+   "deathplace": ""
  }
 ]
