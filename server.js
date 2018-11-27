@@ -4,16 +4,7 @@ var express = require("express");
 
 var cors = require('cors')
 
-// var GoogleSpreadsheet = require('google-spreadsheet');
-// var creds = require('./data/client_secret.json');
-
-// Create a document object using the ID of the spreadsheet - obtained from its URL.
-// var spreadsheetId = '1tpzXkd0eMJZtAMo8lZ2gvcqCMx_ku4kx_FUOZvh8x20'
-// var doc = new GoogleSpreadsheet(spreadsheetId);
-
 var prezData = require('./presidents.json')
-
-// console.log('0. prezData is: ', prezData)
 
 var app = express();
 
@@ -26,33 +17,39 @@ app.listen(port, () => {
   console.log("Server running on port:", port);
 });
 
-function compareNamesAscending(a,b) {
-  if (a.president < b.president)
-    return -1;
-  if (a.president > b.president)
-    return 1;
-  return 0;
-}
-
-function compareNamesDescending(a,b) {
-  if (a.president < b.president)
-    return 1;
-  if (a.president > b.president)
-    return -1;
-  return 0;
-}
-
-// function compareNames(a,b, order) {
-//   if
+// function compareNamesAscending(a,b) {
+//   if (a.president < b.president)
+//     return -1;
+//   if (a.president > b.president)
+//     return 1;
+//   return 0;
 // }
+//
+// function compareNamesDescending(a,b) {
+//   if (a.president < b.president)
+//     return 1;
+//   if (a.president > b.president)
+//     return -1;
+//   return 0;
+// }
+
+function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key];
+        var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+}
 
 function sortArray(array, order) {
   console.log('in sortArray, order is: ', order)
   if (order === "orderAscending") {
-    return array.sort(compareNamesAscending)
+    // return array.sort(compareNamesAscending)
+    return sortByKey(array, "president")
     // return array.sort(compareNames(order) ) //check how to refactor this with just one function
   } else {
-    return array.sort(compareNamesDescending)
+    // return array.sort(compareNamesDescending)
+    return sortByKey(array, "president").reverse()
   }
 }
 
@@ -63,37 +60,11 @@ app.get("/presidents/:order", (req, res) => {
   var order = req.params.order
   console.log("1. order is: ", order) //this is with :order
 
-  // // Authenticate with the Google Spreadsheets API.
-  // doc.useServiceAccountAuth(creds, function (err) {
-  //   // Get all of the rows from the spreadsheet.
-  //     doc.getRows(1, function (err, rows) {
-  //       if(!err) {
-  //         var sortedArray = sortArray(rows, order)
-  //         res.json(sortedArray) //send rows of data as response to api endpoint
-  //       } else {
-  //         console.log("err is: ", err)
-  //       }
-  //     });
-  // });
-
-
-  // Authenticate with the Google Spreadsheets API.
-  // doc.useServiceAccountAuth(creds, function (err) {
-    // Get all of the rows from the spreadsheet.
-      // doc.getRows(1, function (err, rows) {
-        // if(!err) {
-          // var sortedArray = sortArray(rows, order)
-          var sortedArray = sortArray(prezData, order)
-          console.log('1. sortedArray is: ', sortedArray)
-          res.json(sortedArray) //send rows of data as response to api endpoint
-        // } else {
-          // console.log("err is: ", err)
-        // }
-      // });
-  // });
+  var sortedArray = sortArray(prezData, order)
+  console.log('1. sortedArray is: ', sortedArray)
+  res.json(sortedArray) //send rows of data as response to api endpoint
 
 })
-
 
 // var sortedArrayTest = sortArray(prezData, "orderAscending")
 // console.log('1. sortedArrayTest is: ', sortedArrayTest)
